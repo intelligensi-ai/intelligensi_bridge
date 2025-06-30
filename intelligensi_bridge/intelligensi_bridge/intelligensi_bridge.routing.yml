@@ -1,0 +1,33 @@
+intelligensi_bridge.site_info:
+  path: '/api/info'
+  defaults:
+    _controller: '\Drupal\intelligensi_bridge\Controller\IntelligensiBridgeController::siteInfo'
+    _title: 'Site Info'
+  requirements:
+    _permission: 'access intelligensi api'
+
+intelligensi_bridge.update_homepage:
+  path: '/api/update-homepage'
+  defaults:
+    _controller: '\Drupal\intelligensi_bridge\Controller\IntelligensiBridgeController::updateHomepage'
+    _csrf_token: 'TRUE'
+  requirements:
+    _permission: 'administer intelligensi content'
+    _method: 'POST'
+
+intelligensi_bridge.bulk_export:
+  path: '/api/bulk-export'
+  defaults:
+    _controller: '\Drupal\intelligensi_bridge\Controller\IntelligensiBridgeController::bulkExport'
+  requirements:
+    _permission: 'access intelligensi api'
+    _method: 'GET'
+
+intelligensi_bridge.import_nodes:
+  path: '/api/import-nodes'
+  defaults:
+    _controller: '\Drupal\intelligensi_bridge\Controller\IntelligensiBridgeController::importNodes'
+    _csrf_token: 'TRUE'
+  requirements:
+    _permission: 'administer intelligensi content'
+    _method: 'POST'

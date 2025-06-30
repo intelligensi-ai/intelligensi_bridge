@@ -1,0 +1,8 @@
+# Define permissions for Intelligensi Bridge module.
+access intelligensi api:
+  title: 'Access Intelligensi API'
+  description: 'Allow users to access the Intelligensi Bridge API endpoints'
+
+administer intelligensi content:
+  title: 'Administer Intelligensi content'
+  description: 'Allow users to create, update, and delete content via the Intelligensi Bridge API'

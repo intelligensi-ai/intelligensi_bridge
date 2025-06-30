@@ -1,0 +1,7 @@
+name: Intelligensi Bridge
+type: module
+description: "API bridge for exporting and importing content."
+core_version_requirement: ^11
+package: Custom
+dependencies:
+  - node
